@@ -1,0 +1,64 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="osu!mania"
+config/tags=PackedStringArray("rhythm")
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+boot_splash/stretch_mode=0
+boot_splash/use_filter=false
+
+[audio]
+
+buses/default_bus_layout=""
+driver/output_latency=5
+
+[debug]
+
+gdscript/warnings/integer_division=0
+gdscript/run_on_separate_thread=false
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/resizable=false
+window/size/sharp_corners=true
+window/size/maximize_disabled=true
+window/size/window_width_override=1152
+window/size/window_height_override=648
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/object_pool_plugin/plugin.cfg")
+
+[input_devices]
+
+sensors/enable_object_picking=true
+sensors/stretch/aspect="keep"
+
+[physics]
+
+2d/run_on_separate_thread=true
+common/enable_object_picking=false
+
+[rendering]
+
+occlusion_culling/bvh_build_quality=0
+rendering_device/vsync/frame_queue_size=3
+rendering_device/pipeline_cache/save_chunk_size_mb=5.000001
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+textures/default_filters/anisotropic_filtering_level=1
